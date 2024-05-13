@@ -1,3 +1,117 @@
 .details{
     flex:1;
+
+    .user{
+        padding: 15px 8px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        border-bottom: 1px solid rgba(164, 162, 162, 0.676);
+
+        img{
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .text{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            
+            p{
+                font-size: 10px;
+            }
+        }
+    }
+
+    .info{
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .option{
+
+            .title{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                img{
+                    width: 25px;
+                    height: 25px;
+                    background-color: rgba(17,25,40,0.3);
+                    padding: 8px;
+                    border-radius: 50%;
+                    cursor: pointer;
+                }
+
+                span{
+                    font-size: 10px;
+                    font-weight: bold;
+                }
+            }
+
+            .photos{
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                margin-top: 15px;
+
+                .photoItem{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .photoDetail{
+                        display: flex;
+                        align-items: center;
+                        gap: 15px;
+
+                        img{
+                            width: 30px;
+                            height: 30px;
+                            border-radius: 5px;
+                            object-fit: cover;
+                        }
+
+                        span{
+                            font-size: 11px;
+                            color: rgb(231, 231, 231);
+                            font-weight: 300;
+                        }
+
+                    }
+                    .icon{
+                        width: 25px;
+                        height: 25px;
+                        background-color: rgba(17,25,40,0.3);
+                        padding: 5px;
+                        border-radius: 50%;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        button{
+            padding: 8px 15px;
+            background-color: rgba(230,74,105,0.553);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+
+            &:hover{
+                background-color: rgba(230, 74, 105, 0.811);
+            }
+
+            &.logout{
+                padding: 8px;
+                background-color: rgb(68, 153, 176);
+            }
+        }
+    }
 }
